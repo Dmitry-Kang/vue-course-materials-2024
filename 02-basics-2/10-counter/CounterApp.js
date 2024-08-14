@@ -21,7 +21,7 @@ export default defineComponent({
         class="button button--secondary"
         type="button"
         aria-label="Decrement"
-        :onclick="counter--"
+        @click="counter--"
         :disabled="counter <= min"
       >➖</button>
 
@@ -31,7 +31,7 @@ export default defineComponent({
         class="button button--secondary"
         type="button"
         aria-label="Increment"
-        :onclick="counter++"
+        @click="counter++"
         :disabled="counter >= max"
       >➕</button>
     </div>
